@@ -35,6 +35,7 @@ Video Player and Audio with Javascript Vanilla
 - [Number](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number)
   > Value
 - [value](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/values)
+- [volume change](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/volumechange_event)
   > Event Change
 - [event Change](https://developer.mozilla.org/es/docs/Web/API/HTMLElement/change_event)
   > TimeUpdate

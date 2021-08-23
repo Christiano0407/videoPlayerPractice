@@ -70,3 +70,10 @@ video {
 .timesTamp {
   font-size: 1.2rem;
 }
+
+.rwd {
+  padding: 0.5rem;
+}
+.fwd {
+  padding: 0.5rem;
+}

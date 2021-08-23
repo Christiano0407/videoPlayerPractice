@@ -17,6 +17,8 @@ const progressBar = document.querySelector(".progress");
 console.log(progressBar);
 const timestamp = document.querySelector(".timestamp");
 console.log(timestamp);
+const rwd = document.querySelector(`.rwd`);
+const fwd = document.querySelector(`.fwd`);
 
 // <<<< ================ Functiones / Events ================= >>>>
 media.removeAttribute(`controls`);
@@ -29,7 +31,14 @@ playBtn.addEventListener("click", playPauseVideo);
 stopBtn.addEventListener("click", stopVideo);
 media.addEventListener("timeupdate", updateVideoProgress);
 
-// == Functions == >
+rwd.addEventListener(`click`, mediaBackward);
+fwd.addEventListener(`click`, mediaForward);
+
+let intervalFwd;
+let intervalRwd;
+
+// == Functions ===== >
+// === PLAY >>>
 function playPauseVideo() {
   if (media.paused) {
     media.play();
@@ -50,14 +59,14 @@ function playBtnToggleIcon() {
     playBtnIcon.classList.add("fa-pause-circle");
   }
 }
-
+// === STOP >>>>
 function stopVideo() {
   media.pause();
   media.currentTime = 0;
   playBtnToggleIcon();
   progressBar.value = 0;
 }
-
+// === PROGRESS >>>>
 function setVideoProgress() {
   media.currentTime = Number((progressBar.value * media.duration) / 100);
 }
@@ -76,5 +85,34 @@ function updateVideoProgress() {
 
   timestamp.textContent = `${minutes}: ${seconds}`;
 }
+// === BTN HACIA ATRÁS Y ADELANTE  >>>>>
+function mediaBackward() {
+  clearInterval(intervalFwd);
+  fwd.classList.remove(`active`);
 
+  if (rwd.classList.contains(`active`)) {
+    rwd.classList.remove(`active`);
+    clearInterval(intervalRwd);
+    media.play();
+  } else {
+    media.pause();
+    rwd.classList.add(`active`);
+    intervalRwd = setInterval(windBackward, 200);
+  }
+}
+
+function windBackward() {
+  if (media.currentTime <= 3) {
+    rwd.classList.remove(`active`);
+    clearInterval(intervalRwd);
+    stopBtn();
+  } else {
+    media.currentTime -= 3;
+  }
+}
+
+function mediaForward() {}
+
+function windForward() {}
+// ============================== ==================== ============ >>>>
 console.groupEnd();
