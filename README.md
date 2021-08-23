@@ -26,6 +26,11 @@ Video Player and Audio with Javascript Vanilla
 - [Video and Audio APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs)
 - [audio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
 - [video](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)
+- [currentTime](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/currentTime)
+- [Number](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number)
+- [value](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/values)
+- [event Change](https://developer.mozilla.org/es/docs/Web/API/HTMLElement/change_event)
+- []()
 
 # Deploy Web
 
