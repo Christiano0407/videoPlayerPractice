@@ -27,6 +27,8 @@ Video Player and Audio with Javascript Vanilla
 - [Video and Audio APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs)
   > audio
 - [audio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
+  > CreateJs / sound Js
+- [Sound Js](https://createjs.com/soundjs)
   > Video
 - [video](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)
   > Current Time

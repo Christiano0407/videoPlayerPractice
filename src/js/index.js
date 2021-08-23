@@ -13,6 +13,10 @@ const playBtnIcon = playBtn.querySelector("i");
 console.log(playBtnIcon);
 const stopBtn = document.querySelector(".stop");
 console.log(stopBtn);
+const muted = document.querySelector(`.muted`);
+console.log(muted);
+const mutedIconBtn = muted.querySelector(`i`);
+console.log(mutedIconBtn);
 const progressBar = document.querySelector(".progress");
 console.log(progressBar);
 const timestamp = document.querySelector(".timestamp");
@@ -30,6 +34,7 @@ progressBar.addEventListener("change", setVideoProgress);
 playBtn.addEventListener("click", playPauseVideo);
 stopBtn.addEventListener("click", stopVideo);
 media.addEventListener("timeupdate", updateVideoProgress);
+muted.addEventListener(`click`, mutedVideo);
 
 rwd.addEventListener(`click`, mediaBackward);
 fwd.addEventListener(`click`, mediaForward);
@@ -65,7 +70,36 @@ function stopVideo() {
   media.currentTime = 0;
   playBtnToggleIcon();
   progressBar.value = 0;
+  // == remover los btn de atrás y adelante =>
+  rwd.classList.remove(`active`);
+  fwd.classList.remove(`active`);
+
+  clearInterval(intervalRwd);
+  clearInterval(intervalFwd);
 }
+// === Muted === >
+function mutedVideo() {
+  //media.muted = true;
+
+  if (media.muted) {
+    media.muted = false;
+  } else {
+    media.muted = true;
+  }
+
+  mutedIconsBtn();
+}
+
+function mutedIconsBtn() {
+  if (media.muted) {
+    mutedIconBtn.classList.remove("fa-volume-up");
+    mutedIconBtn.classList.add("fa-volume-mute");
+  } else {
+    mutedIconBtn.classList.remove("fa-volume-mute");
+    mutedIconBtn.classList.add("fa-volume-up");
+  }
+}
+
 // === PROGRESS >>>>
 function setVideoProgress() {
   media.currentTime = Number((progressBar.value * media.duration) / 100);
