@@ -23,14 +23,28 @@ Video Player and Audio with Javascript Vanilla
 # Guide Video Play
 
 - [Wmedia Desarrollo Web Moderno y Productivo](https://www.youtube.com/watch?v=i6bPvOGkDFQ&t=242s)
+  > Video and Audio APIS
 - [Video and Audio APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs)
+  > audio
 - [audio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
+  > Video
 - [video](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)
+  > Current Time
 - [currentTime](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/currentTime)
+  > Number
 - [Number](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number)
+  > Value
 - [value](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/values)
+  > Event Change
 - [event Change](https://developer.mozilla.org/es/docs/Web/API/HTMLElement/change_event)
+  > TimeUpdate
 - [timeUpdate](https://developer.mozilla.org/es/docs/Web/API/HTMLMediaElement/timeupdate_event)
+  > Volume
+- [volume](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/volume)
+  > Server-Side Website Programming
+- [Server-Side](https://developer.mozilla.org/en-US/docs/Learn/Server-side)
+  > Learn Web Development
+- [Web Development](https://developer.mozilla.org/en-US/docs/Learn)
 
 # Deploy Web
 

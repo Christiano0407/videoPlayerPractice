@@ -43,11 +43,11 @@ function playPauseVideo() {
 
 function playBtnToggleIcon() {
   if (media.paused) {
-    playBtnIcon.classList.remove("fa-pause");
-    playBtnIcon.classList.add("fa-play");
+    playBtnIcon.classList.remove("fa-pause-circle");
+    playBtnIcon.classList.add("fa-play-circle");
   } else {
-    playBtnIcon.classList.remove("fa-play");
-    playBtnIcon.classList.add("fa-pause");
+    playBtnIcon.classList.remove("fa-play-circle");
+    playBtnIcon.classList.add("fa-pause-circle");
   }
 }
 
