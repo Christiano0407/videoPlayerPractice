@@ -2,65 +2,70 @@ console.group("Video Player");
 // <<<< ============== Variables ===================== >>>>
 const player = document.querySelector(`.player`);
 console.log(player);
-const video = document.getElementById(`video`);
-console.log(video);
-//const controls = document.querySelector(`.controls`);
-const playBtnIcon = document.querySelector(`i`);
-console.log(playBtnIcon);
-const playBtn = document.querySelector(`.play`);
+// == Tenemos que tomar el video (etiqueta, no la clase ) === >
+const media = document.querySelector("video");
+console.log(media);
+const controls = document.querySelector(`.controls`);
+console.log(controls);
+const playBtn = document.querySelector(".play");
 console.log(playBtn);
-const stopBtn = document.querySelector(`.stop`);
+const playBtnIcon = playBtn.querySelector("i");
+console.log(playBtnIcon);
+const stopBtn = document.querySelector(".stop");
 console.log(stopBtn);
-const progressBar = document.querySelector(`.progress`);
+const progressBar = document.querySelector(".progress");
 console.log(progressBar);
-const timestamp = document.querySelector(`.timesTamp`);
+const timestamp = document.querySelector(".timestamp");
 console.log(timestamp);
 
 // <<<< ================ Functiones / Events ================= >>>>
+media.removeAttribute(`controls`);
+controls.style.visibility = `visible`;
+
 // = Listen for event ===>
-video.addEventListener("click", playPauseVideo);
-progressBar.addEventListener(`change`, setVideoProgress);
-playBtn.addEventListener(`click`, playPauseVideo);
-stopBtn.addEventListener(`click`, stopVideo);
-video.addEventListener("timeupdate", updateVideoProgress);
+media.addEventListener("click", playPauseVideo);
+progressBar.addEventListener("change", setVideoProgress);
+playBtn.addEventListener("click", playPauseVideo);
+stopBtn.addEventListener("click", stopVideo);
+media.addEventListener("timeupdate", updateVideoProgress);
 
 // == Functions == >
 function playPauseVideo() {
-  //   if (video.paused) {
-  //     video.play();
-  //   } else {
-  //     video.pause();
-  //   }
-  video[video.paused ? "play" : "pause"]();
+  if (media.paused) {
+    media.play();
+  } else {
+    media.pause();
+  }
+  //video[video.paused ? "play" : "pause"]();
 
   playBtnToggleIcon();
 }
 
 function playBtnToggleIcon() {
-  if (video.paused) {
+  if (media.paused) {
     playBtnIcon.classList.remove("fa-pause");
-    playBtnIcon.classList.add(`fa-play`);
+    playBtnIcon.classList.add("fa-play");
   } else {
-    playBtnIcon.classList.remove(`fa-play`);
-    playBtnIcon.classList.add(`fa-pause`);
+    playBtnIcon.classList.remove("fa-play");
+    playBtnIcon.classList.add("fa-pause");
   }
 }
 
 function stopVideo() {
-  video.pause();
-  video.currentTime = 0;
+  media.pause();
+  media.currentTime = 0;
   playBtnToggleIcon();
   progressBar.value = 0;
 }
 
 function setVideoProgress() {
-  video.currentTime = Number((progressBar.value * video.duration) / 100);
+  media.currentTime = Number((progressBar.value * media.duration) / 100);
 }
 
 function updateVideoProgress() {
-  progressBar.value = Number((video.currentTime / video.duration) * 100);
-  let minutes = Math.floor(video.currentTime / 60);
-  let seconds = Math.floor(video.currentTime % 60);
+  progressBar.value = Number((media.currentTime / media.duration) * 100);
+  let minutes = Math.floor(media.currentTime / 60);
+  let seconds = Math.floor(media.currentTime % 60);
 
   if (minutes < 10) {
     minutes = "0" + minutes;

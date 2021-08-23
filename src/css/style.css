@@ -47,14 +47,14 @@ video {
   width: 100%;
   margin: 0 auto;
 }
-.nav__controls {
+.controls {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
 }
-.nav__controls > * {
+.controls > * {
   cursor: pointer;
 }
 .button {
