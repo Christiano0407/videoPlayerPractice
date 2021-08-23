@@ -111,8 +111,29 @@ function windBackward() {
   }
 }
 
-function mediaForward() {}
+function mediaForward() {
+  clearInterval(intervalRwd);
+  rwd.classList.remove(`active`);
 
-function windForward() {}
+  if (fwd.classList.contains(`active`)) {
+    fwd.classList.remove(`active`);
+    clearInterval(intervalFwd);
+    media.play();
+  } else {
+    media.pause();
+    fwd.classList.add(`active`);
+    intervalFwd = setInterval(windForward, 200);
+  }
+}
+
+function windForward() {
+  if (media.currentTime >= media.duration - 3) {
+    fwd.classList.remove(`active`);
+    clearInterval(intervalFwd);
+    stopBtn();
+  } else {
+    media.currentTime += 3;
+  }
+}
 // ============================== ==================== ============ >>>>
 console.groupEnd();
