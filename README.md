@@ -30,7 +30,7 @@ Video Player and Audio with Javascript Vanilla
 - [Number](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number)
 - [value](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/values)
 - [event Change](https://developer.mozilla.org/es/docs/Web/API/HTMLElement/change_event)
-- []()
+- [timeUpdate](https://developer.mozilla.org/es/docs/Web/API/HTMLMediaElement/timeupdate_event)
 
 # Deploy Web
 

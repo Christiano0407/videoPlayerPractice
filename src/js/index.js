@@ -20,6 +20,9 @@ console.log(timestamp);
 // = Listen for event ===>
 video.addEventListener("click", playPauseVideo);
 progressBar.addEventListener(`change`, setVideoProgress);
+playBtn.addEventListener(`click`, playPauseVideo);
+stopBtn.addEventListener(`click`, stopVideo);
+video.addEventListener("timeupdate", updateVideoProgress);
 
 // == Functions == >
 function playPauseVideo() {
@@ -43,8 +46,30 @@ function playBtnToggleIcon() {
   }
 }
 
+function stopVideo() {
+  video.pause();
+  video.currentTime = 0;
+  playBtnToggleIcon();
+  progressBar.value = 0;
+}
+
 function setVideoProgress() {
   video.currentTime = Number((progressBar.value * video.duration) / 100);
+}
+
+function updateVideoProgress() {
+  progressBar.value = Number((video.currentTime / video.duration) * 100);
+  let minutes = Math.floor(video.currentTime / 60);
+  let seconds = Math.floor(video.currentTime % 60);
+
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+  if (seconds < 10) {
+    seconds = "0" + seconds;
+  }
+
+  timestamp.textContent = `${minutes}: ${seconds}`;
 }
 
 console.groupEnd();
