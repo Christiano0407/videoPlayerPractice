@@ -5,6 +5,7 @@ Video Player and Audio with Javascript Vanilla
 # Course
 
 - [Platzi](https://platzi.com/home)
+  > Platzi-curso-práctico-javascript
 
 # Guide and Resource Web
 

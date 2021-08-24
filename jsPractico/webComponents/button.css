@@ -1,0 +1,23 @@
+/* ============= WEB COMPONENT ==========*/
+/* ============= Button ==========*/
+.button {
+  padding: 1rem;
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  margin: 0.5rem auto;
+  border-radius: 0.5rem;
+}
+.button:is(:hover, :focus) {
+  background: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+.button:active {
+  transform: scale(0.9);
+}

@@ -1,3 +1,7 @@
+/* <<<<< ================= Web Components =================== >>>>> */
+@import "./webComponents/form.css";
+@import "./webComponents/button.css";
+/* <<<<< ================= Style CSS =================== >>>>> */
 :root {
   --clr-black: #000000;
   --clr-white: #ffffff;
@@ -29,4 +33,17 @@ body {
   width: 100%;
   font-family: "DM Sans", sans-serif;
   background: #ffffff;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  margin: 2rem auto;
+}
+.container {
+  width: 100%;
+  margin: 2rem auto;
 }
