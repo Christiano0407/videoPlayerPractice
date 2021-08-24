@@ -18,7 +18,7 @@ console.log(cuadradoParametro());
 const areaCuadrado = (ladoCuadrado * ladoCuadrado) / 2;
 console.log(`Es el área total del cuadrado: ${areaCuadrado}cm`);
 
-// == Triángulo
+// == Triángulo ==== >
 let ladoA = 20;
 let ladoB = 10;
 let ladoC = +ladoB;
@@ -82,13 +82,14 @@ console.log(btnArCir);
 
 // == Functions / Events === >
 
-// = Paraámetro / HTML / cuadrado ============================== >
-// << Función para calcular el perímetro >>
+// = Paraámetro / Área / HTML / cuadrado ============================== >
+
+// === > Variables = >
 const btnTextPar = document.getElementById(`perTextCuad`);
 console.log(btnTextPar);
 const btnTextAr = document.getElementById(`arTextCuad`);
 console.log(btnTextAr);
-// === >
+// << Función para calcular el perímetro >>
 lados = (number) => {
   return number * 4;
 };
@@ -128,6 +129,36 @@ btnArCua.addEventListener(`click`, () => {
   arTextCuad.style.color = "#000000";
 });
 
-// = Paraámetro / HTML / Triángulo ============================= >
+// = Paraámetro/ Área / HTML / Triángulo ============================= >
+// == Constantes and variables ==>
+const btnTri = document.getElementById(`perTextTri`);
+console.log(btnTri);
+const btnAr = document.getElementById(`arTextTri`);
+console.log(btnAr);
 
+// == Perimetro ==>
+ladosTriaangulo = () => {};
+ladosTriaangulo();
+
+btnPerTri.addEventListener(`click`, () => {
+  const labelTri = document.getElementById(`inTriangulo`);
+  const value = labelTri.value;
+
+  let periValue = ladosTriaangulo(value);
+  console.log(periValue);
+
+  btnTri.textContent = periValue;
+  btnTri.style.fontSize = "1.6rem";
+  btnTri.style.color = "#000";
+  btnTri.style.fontWeight = "500";
+});
+
+// == Área ==>
+
+// = Paraámetro / Área / HTML / Círculo ============================= >
+// == Constantes and variables ==>
+
+// == Diámetro ==>
+
+// == Área Circunferencia ==>
 console.groupEnd();
