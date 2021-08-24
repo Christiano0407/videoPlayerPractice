@@ -82,4 +82,52 @@ console.log(btnArCir);
 
 // == Functions / Events === >
 
+// = Paraámetro / HTML / cuadrado ============================== >
+// << Función para calcular el perímetro >>
+const btnTextPar = document.getElementById(`perTextCuad`);
+console.log(btnTextPar);
+const btnTextAr = document.getElementById(`arTextCuad`);
+console.log(btnTextAr);
+// === >
+lados = (number) => {
+  return number * 4;
+};
+lados();
+//== >
+btnPerCua.addEventListener(`click`, () => {
+  // => Obtenemos el valor <=
+  const labelCuad = document.getElementById(`inCuadrado`);
+  const value = labelCuad.value;
+
+  let perimeterCua = lados(value);
+
+  console.log(perimeterCua);
+  // == Agregar a HTML ==>
+  btnTextPar.textContent = ` Perimeter: ${perimeterCua}`;
+  btnTextPar.style.fontSize = "1.6rem";
+  btnTextPar.style.color = "red";
+  btnTextPar.style.fontWeight = "500";
+});
+
+// == AREA ==>
+areaLados = (number) => {
+  return (number * number) / 2;
+};
+areaLados();
+
+btnArCua.addEventListener(`click`, () => {
+  const labelCuad = document.getElementById(`inCuadrado`);
+  const value = labelCuad.value;
+
+  let areaCuadrado = areaLados(value);
+  console.log(areaCuadrado);
+
+  arTextCuad.textContent = `Area: ${areaCuadrado}`;
+  arTextCuad.style.fontSize = "1.6rem";
+  arTextCuad.style.fontWeight = "500";
+  arTextCuad.style.color = "#000000";
+});
+
+// = Paraámetro / HTML / Triángulo ============================= >
+
 console.groupEnd();
