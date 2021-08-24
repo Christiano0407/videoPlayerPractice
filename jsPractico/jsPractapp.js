@@ -50,6 +50,18 @@ circPerim = () => {
   console.log(circunferenciaCir);
 };
 
+// == Diameter (Calc) == >
+diameterCir = () => {
+  let diameter = piRadio * diametroCir * 2;
+  console.log(diameter);
+};
+
 circPerim();
+diameterCir();
+
+console.groupEnd();
+// <<<<<<< ====================== Part Two =================== >>>>
+console.group("Practice Calculate Two / Interactuando desde HTNL");
+// === Interactuando HTML ====== >
 
 console.groupEnd();
