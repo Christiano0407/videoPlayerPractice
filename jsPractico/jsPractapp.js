@@ -63,5 +63,23 @@ console.groupEnd();
 // <<<<<<< ====================== Part Two =================== >>>>
 console.group("Practice Calculate Two / Interactuando desde HTNL");
 // === Interactuando HTML ====== >
+//== Cuadrado Buttons ==>
+const btnPerCua = document.getElementById(`btnPerCua`);
+console.log(btnPerCua);
+const btnArCua = document.getElementById(`btnArCua`);
+console.log(btnArCua);
+
+//== Triángulo Buttons ==>
+const btnPerTri = document.getElementById(`btnPerTri`);
+console.log(btnPerTri);
+const btnArTri = document.getElementById(`btnArTri`);
+console.log(btnArTri);
+//== Círculo Buttons ==>
+const btnPerCir = document.getElementById(`btnPerCir`);
+console.log(btnPerCir);
+const btnArCir = document.getElementById(`btnArCir`);
+console.log(btnArCir);
+
+// == Functions / Events === >
 
 console.groupEnd();
