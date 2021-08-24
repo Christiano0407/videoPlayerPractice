@@ -100,6 +100,13 @@ function mutedIconsBtn() {
   }
 }
 
+// Volumr == >
+function getVolume() {
+  // = Saber cuánto tiene de vol
+  console.log(media.volume);
+}
+getVolume();
+
 // === PROGRESS >>>>
 function setVideoProgress() {
   media.currentTime = Number((progressBar.value * media.duration) / 100);

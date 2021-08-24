@@ -57,6 +57,8 @@ Video Player and Audio with Javascript Vanilla
 
 # CDN
 
+- [CDN](https://cdnjs.com/)
+
 # Articles and Docs Web
 
 # MIT License
