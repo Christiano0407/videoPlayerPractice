@@ -49,6 +49,12 @@ Video Player and Audio with Javascript Vanilla
   > Learn Web Development
 - [Web Development](https://developer.mozilla.org/en-US/docs/Learn)
 
+# Guide APIs
+
+- [freecodeCamp / APIs Beginners](https://www.youtube.com/watch?v=GZvSYJDk-us&t=8s)
+- [notes APIS](https://github.com/craigsdennis/intro-to-apis-course/blob/master/course-notes.md)
+- [fetch APIs](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
+
 # Deploy Web
 
 # Domain and Hosting
