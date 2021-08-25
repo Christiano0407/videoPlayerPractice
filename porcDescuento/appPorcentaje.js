@@ -48,11 +48,11 @@ console.log(btnStart);
 // === Event / function === >
 btnStart.addEventListener(`click`, () => {
   console.log("START");
-  // => inputPrice >
+  // llamar => inputPrice >
   const inputPrice = document.getElementById(`inputPrice`);
   const priceValue = inputPrice.value;
 
-  // => inputDiscount >
+  // llamar => inputDiscount >
   const inputDiscount = document.getElementById(`inputDiscount`);
   const discountValue = inputDiscount.value;
 
@@ -62,7 +62,8 @@ btnStart.addEventListener(`click`, () => {
   );
   // => llamar a párrafo = HTML >
   //==> Lllamar párrafo
-  const Cash = document.getElementById(`cash`);
+  const cash = document.getElementById(`cash`);
+  console.log(cash);
   cash.innerText = `El precio con descuento: $ ${priceWithDiscount}`;
   cash.style.color = "red";
   cash.style.fontSize = "1.6rem";
