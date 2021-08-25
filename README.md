@@ -50,6 +50,11 @@ Video Player and Audio with Javascript Vanilla
   > Learn Web Development
 - [Web Development](https://developer.mozilla.org/en-US/docs/Learn)
 
+> Math
+
+- [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+- [Math sqrt / raíces cuadradas](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt)
+
 # Guide APIs
 
 - [freecodeCamp / APIs Beginners](https://www.youtube.com/watch?v=GZvSYJDk-us&t=8s)

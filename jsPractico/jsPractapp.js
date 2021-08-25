@@ -137,9 +137,12 @@ const btnAr = document.getElementById(`arTextTri`);
 console.log(btnAr);
 
 // == Perimetro ==>
-ladosTriaangulo = () => {};
+// = Function / valores dinamicos=>
+ladosTriaangulo = (number) => {
+  return number;
+};
 ladosTriaangulo();
-
+// = event =>
 btnPerTri.addEventListener(`click`, () => {
   const labelTri = document.getElementById(`inTriangulo`);
   const value = labelTri.value;
@@ -154,16 +157,33 @@ btnPerTri.addEventListener(`click`, () => {
 });
 
 // == Área ==>
-areaTri = () => {
-  return (baseTriangulo * alturaTriangulo) / 2;
+areaTri = (base, altura) => {
+  return (base * altura) / 2;
 };
+areaTri();
 
 btnArTri.addEventListener(`click`, () => {});
 
 // = Paraámetro / Área / HTML / Círculo ============================= >
 // == Constantes and variables ==>
 
-// == Diámetro ==>
+// == Diámetro == >
+diametroCirculo = (radio) => {
+  return radio * 2;
+};
+diametroCirculo();
+
+// == Perimetro == >
+perimetroCirculo = (radio) => {
+  const diametro = diametroCirculo(radio);
+  return diametro * piRadio;
+};
+perimetroCirculo();
 
 // == Área Circunferencia ==>
+areaCircunferencia = (radio) => {
+  return radio * radio * piRadio;
+};
+areaCircunferencia();
+
 console.groupEnd();
