@@ -154,6 +154,11 @@ btnPerTri.addEventListener(`click`, () => {
 });
 
 // == Área ==>
+areaTri = () => {
+  return (baseTriangulo * alturaTriangulo) / 2;
+};
+
+btnArTri.addEventListener(`click`, () => {});
 
 // = Paraámetro / Área / HTML / Círculo ============================= >
 // == Constantes and variables ==>
