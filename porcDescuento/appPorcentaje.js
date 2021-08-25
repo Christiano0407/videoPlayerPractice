@@ -30,9 +30,9 @@ console.groupEnd("Descuentos y funciones y eventos");
 calcularPrecioConDescuento = (precio, descuento) => {
   let porcentajePrecioConDescuento = 100 - descuento;
   console.log(porcentajePrecioConDescuento);
-  const priceWithDiscount = (precio * porcentajePrecioConDescuento) / 100;
+  const precioConDescuento = (precio * porcentajePrecioConDescuento) / 100;
 
-  return priceWithDiscount;
+  return precioConDescuento;
 };
 /* console.log(calcularPrecioConDescuento(500, 15)); */
 
@@ -56,17 +56,16 @@ btnStart.addEventListener(`click`, () => {
   const inputDiscount = document.getElementById(`inputDiscount`);
   const discountValue = inputDiscount.value;
 
-  const priceWithDiscount = calcularPrecioConDescuento(
-    priceValue,
-    discountValue
-  );
+  const precioTotal = calcularPrecioConDescuento(priceValue, discountValue);
   // => llamar a párrafo = HTML >
   //==> Lllamar párrafo
   const cash = document.getElementById(`cash`);
   console.log(cash);
-  cash.innerText = `El precio con descuento: $ ${priceWithDiscount}`;
+  //>
+  cash.innerText = `Total: $ ${precioTotal}.00 Dollars`;
   cash.style.color = "red";
-  cash.style.fontSize = "1.6rem";
+  cash.style.fontSize = "1.8rem";
+  cash.style.fontWeight = "700";
 });
 
 console.groupEnd();
