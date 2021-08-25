@@ -30,11 +30,11 @@ console.groupEnd("Descuentos y funciones y eventos");
 calcularPrecioConDescuento = (precio, descuento) => {
   let porcentajePrecioConDescuento = 100 - descuento;
   console.log(porcentajePrecioConDescuento);
-  let precioFijo = (precio * porcentajePrecioConDescuento) / 100;
+  const priceWithDiscount = (precio * porcentajePrecioConDescuento) / 100;
 
-  return precioFijo;
+  return priceWithDiscount;
 };
-console.log(calcularPrecioConDescuento(500, 15));
+/* console.log(calcularPrecioConDescuento(500, 15)); */
 
 console.groupEnd();
 // <<<<<<<<<<<<<<<<<<<<<<<< Part TWO >>>>>>>>>>>>>>>>>>>>> ================ >
@@ -55,7 +55,17 @@ btnStart.addEventListener(`click`, () => {
   // => inputDiscount >
   const inputDiscount = document.getElementById(`inputDiscount`);
   const discountValue = inputDiscount.value;
+
+  const priceWithDiscount = calcularPrecioConDescuento(
+    priceValue,
+    discountValue
+  );
   // => llamar a párrafo = HTML >
+  //==> Lllamar párrafo
+  const Cash = document.getElementById(`cash`);
+  cash.innerText = `El precio con descuento: $ ${priceWithDiscount}`;
+  cash.style.color = "red";
+  cash.style.fontSize = "1.6rem";
 });
 
 console.groupEnd();
