@@ -26,9 +26,30 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../porcDescuento/stylePorcentaje.css" />
-    <title>Document</title>
+    <title>Porcentaje y descuentos</title>
   </head>
   <body>
+    <header>
+      <nav></nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="div">
+          <h1>Porcentaje y Descuentos</h1>
+        </div>
+        <form action="" class="form">
+          <label for="inputPrice">Precio del producto</label>
+          <input id="inputPrice" type="number" placeholder="$" />
+
+          <label for="inputDiscount">% Descuento</label>
+          <input id="inputDiscount" type="number" placeholder="%" />
+
+          <p id="cash"></p>
+          <button id="btn" class="button" type="button">Total</button>
+        </form>
+      </section>
+    </main>
     <script
       src="../porcDescuento/appPorcentaje.js"
       type="text/javascript"
