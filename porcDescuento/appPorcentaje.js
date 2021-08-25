@@ -41,4 +41,21 @@ console.groupEnd();
 console.group("Formulario / Precio y Descuento");
 // <<<< ======== Formulario para descuentos ======== HTML >>>>>>>
 
+// === Variables ===
+const btnStart = document.getElementById(`btn`);
+console.log(btnStart);
+
+// === Event / function === >
+btnStart.addEventListener(`click`, () => {
+  console.log("START");
+  // => inputPrice >
+  const inputPrice = document.getElementById(`inputPrice`);
+  const priceValue = inputPrice.value;
+
+  // => inputDiscount >
+  const inputDiscount = document.getElementById(`inputDiscount`);
+  const discountValue = inputDiscount.value;
+  // => llamar a párrafo = HTML >
+});
+
 console.groupEnd();
