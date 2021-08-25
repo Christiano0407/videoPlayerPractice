@@ -30,7 +30,7 @@ console.groupEnd("Descuentos y funciones y eventos");
 calcularPrecioConDescuento = (precio, descuento) => {
   let porcentajePrecioConDescuento = 100 - descuento;
   console.log(porcentajePrecioConDescuento);
-  const precioConDescuento = (precio * porcentajePrecioConDescuento) / 100;
+  let precioConDescuento = (precio * porcentajePrecioConDescuento) / 100;
 
   return precioConDescuento;
 };
