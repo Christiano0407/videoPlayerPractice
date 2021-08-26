@@ -18,4 +18,25 @@ console.group("Promedio");
 // MODA ======== >>>>>>>>>>
 // Elemento que más se repite de una lista
 
+// =================================================================================
+// =>>>>>>>> Variables <<<<<<<<
+const listOne = [100, 200, 300, 400, 500];
+
+// <<<<<<<<< Events and functions >>>>>>>>>>>>>>
+
+// ==== > Ciclo ==== Llamar por medio del ciclo a cada elemento de la lista >>>>>>> >
+let sumListOne = 0;
+for (let i = 0; i < listOne.length; i++) {
+  sumListOne = sumListOne + listOne[i];
+}
+
+// ==== > Promedio ==
+const promedioLista = sumListOne / listOne.length;
+// =>>> Promedio es = 300;
+
+// >>>>>>>>>>>>>>>> Invocar  <<<<<<<<<<<<<<<
+console.log(promedioLista);
+console.log(listOne);
+console.log(sumListOne);
+
 console.groupEnd();
