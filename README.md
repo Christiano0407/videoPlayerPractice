@@ -39,7 +39,7 @@ Video Player and Audio with Javascript Vanilla
 - [W3School](https://www.w3schools.com/default.asp)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
-# Guide Video Play
+# Guide and Recourses Video Play
 
 - [Wmedia Desarrollo Web Moderno y Productivo](https://www.youtube.com/watch?v=i6bPvOGkDFQ&t=242s)
   > Video and Audio APIS
@@ -82,6 +82,10 @@ Video Player and Audio with Javascript Vanilla
 
 - [array find](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 - [array includes](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+
+> String Length
+
+- [Length](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/length)
 
 # Guide APIs
 
