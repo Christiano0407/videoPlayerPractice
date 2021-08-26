@@ -36,6 +36,14 @@ calcularPrecioConDescuento = (precio, descuento) => {
 };
 /* console.log(calcularPrecioConDescuento(500, 15)); */
 
+// => cupones == >
+let coupons = [
+  { name: "Navidad_regalo", discount: 15 },
+  { name: "Casa_terror", discount: 10 },
+  { name: "Premier", discount: 5 },
+];
+console.log(coupons);
+
 console.groupEnd();
 // <<<<<<<<<<<<<<<<<<<<<<<< Part TWO >>>>>>>>>>>>>>>>>>>>> ================ >
 console.group("Formulario / Precio y Descuento");
@@ -56,9 +64,13 @@ btnStart.addEventListener(`click`, () => {
   const inputDiscount = document.getElementById(`inputDiscount`);
   const discountValue = inputDiscount.value;
 
+  // Llamar a cupón / coupon >
+  const inputCoupon = document.getElementById(`inputCoupon`);
+  const couponValue = inputCoupon;
+
+  // = > Ejecutar el descuento =>
   const precioTotal = calcularPrecioConDescuento(priceValue, discountValue);
-  // => llamar a párrafo = HTML >
-  //==> Lllamar párrafo
+  // => llamar a párrafo = HTML // ==> Lllamar párrafo >
   const cash = document.getElementById(`cash`);
   console.log(cash);
   //>

@@ -55,6 +55,11 @@ Video Player and Audio with Javascript Vanilla
 - [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 - [Math sqrt / raíces cuadradas](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt)
 
+> Array Prototype
+
+- [array find](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+- [array includes](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+
 # Guide APIs
 
 - [freecodeCamp / APIs Beginners](https://www.youtube.com/watch?v=GZvSYJDk-us&t=8s)
