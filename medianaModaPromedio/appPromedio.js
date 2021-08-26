@@ -8,14 +8,14 @@ console.group("Promedio");
 //- Cuarto paso: integrar JS con HTML
 //# curso-practico-javascript
 
-// Promedio ==========>
+// Promedio ========== >>>>>>>>>
 // Fórmula: Media aritmética:
 /* Ventana1 + ventana2 + ventana3 / cantidad de ventanas */
 
-// MEDIANA ======>
+// MEDIANA ====== >>>>>>>>>>
 // Elemento que esté exactamente en medio de la lista.
 
-// MODA ========>
+// MODA ======== >>>>>>>>>>
 // Elemento que más se repite de una lista
 
 console.groupEnd();
