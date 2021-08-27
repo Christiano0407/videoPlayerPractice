@@ -79,7 +79,7 @@ nav ul a:hover {
 main {
   width: 100%;
   margin: 2rem auto;
-  background: lightgray;
+  /* background: lightgray; */
 }
 .section {
   width: 100%;
@@ -130,5 +130,5 @@ p {
 }
 
 .scroll-up header {
-  border-bottom: 5px solid #000000;
+  filter: drop-shadow(0 -10px 20px rgb(178, 178, 178));
 }
