@@ -1,0 +1,40 @@
+/* >>>>> ===================== CSS Components ================== <<<<<<<<*/
+
+/* >>>>> ===================== CSS Style / Design ================== <<<<<<<<*/
+:root {
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+  --clr-b02: #161616;
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+html {
+  font-size: 62.5%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body {
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  background: #ffffff;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}

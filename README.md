@@ -87,6 +87,15 @@ Video Player and Audio with Javascript Vanilla
 
 - [Length](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/length)
 
+# Library Js
+
+- [pict2pix](https://evaristocuesta.github.io/pict2pix/)
+- [wow.js](https://wowjs.uk/)
+- [hover-efect](https://github.com/robin-dela/hover-effect)
+- [GSAP](https://greensock.com/gsap/)
+  >
+- [W3](https://www.w3.org/)
+
 # Guide APIs
 
 - [freecodeCamp / APIs Beginners](https://www.youtube.com/watch?v=GZvSYJDk-us&t=8s)
@@ -104,6 +113,8 @@ Video Player and Audio with Javascript Vanilla
 - [CDN](https://cdnjs.com/)
 
 # Articles and Docs Web
+
+# Library CSS and HTML
 
 # MIT License
 
