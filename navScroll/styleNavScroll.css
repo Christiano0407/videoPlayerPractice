@@ -33,6 +33,7 @@ body {
   width: 100%;
   font-family: "DM Sans", sans-serif;
   background: #ffffff;
+  padding-bottom: 1000%;
 }
 
 header {
@@ -55,24 +56,18 @@ header h1 {
 }
 /* ==== Crear estilos que después vamos a agrgar en Javascript ===== */
 /*Abajo*/
-.scroll-down {
-  header {
-    transform: translate3d(0, -100%, 0);
-  }
+header.scroll-down {
+  transform: translate3d(0, -100%, 0);
 }
 /*Arriba*/
-.scroll-up {
-  header {
-    filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
-  }
+header.scroll-up {
+  filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
 }
 /*Menú abierto*/
-.menu-is-open {
+header.menu-is-open {
   overflow: hidden;
 
-  header {
-    filter: none;
-  }
+  filter: none;
 }
 /* ==== MAIN ===== */
 main {
