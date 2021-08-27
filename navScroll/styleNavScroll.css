@@ -5,6 +5,7 @@
   --clr-black: #000000;
   --clr-white: #ffffff;
   --clr-b02: #161616;
+  --clr-wh2: #eee;
 }
 *,
 ::before,
@@ -34,7 +35,52 @@ body {
   background: #ffffff;
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  padding: 2rem 0;
+  text-align: center;
+  background: var(--clr-wh2);
+
+  transition: all 300ms ease-in-out;
+}
+header h1 {
+  color: #161616;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* ==== Crear estilos que después vamos a agrgar en Javascript ===== */
+/*Abajo*/
+.scroll-down {
+  header {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+/*Arriba*/
+.scroll-up {
+  header {
+    filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+  }
+}
+/*Menú abierto*/
+.menu-is-open {
+  overflow: hidden;
+
+  header {
+    filter: none;
+  }
+}
+/* ==== MAIN ===== */
 main {
   width: 100%;
-  margin: 0 auto;
+  margin: 2rem auto;
+  background: lightblue;
+}
+.section {
+  width: 100%;
+  height: 100vh;
 }

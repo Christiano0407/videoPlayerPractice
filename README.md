@@ -87,13 +87,23 @@ Video Player and Audio with Javascript Vanilla
 
 - [Length](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/length)
 
+> Page Scroll Y and X
+
+- [window](https://developer.mozilla.org/en-US/docs/Web/API/Window)
+- [pageYOffset](https://developer.mozilla.org/en-US/docs/Web/API/Window/pageYOffset)
+- [scrollY](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY)
+- [scrollX](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX)
+- [pageXOoffset/specification](https://developer.mozilla.org/en-US/docs/Web/API/Window/pageXOffset)
+- [window-document-defaultView](https://developer.mozilla.org/en-US/docs/Web/API/Document/defaultView)
+- [event Scroll](https://developer.mozilla.org/es/docs/Web/API/Document/scroll_event)
+
 # Library Js
 
 - [pict2pix](https://evaristocuesta.github.io/pict2pix/)
 - [wow.js](https://wowjs.uk/)
 - [hover-efect](https://github.com/robin-dela/hover-effect)
 - [GSAP](https://greensock.com/gsap/)
-  >
+  > W3 / Web
 - [W3](https://www.w3.org/)
 
 # Guide APIs
