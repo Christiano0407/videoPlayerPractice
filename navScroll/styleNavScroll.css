@@ -33,20 +33,21 @@ body {
   width: 100%;
   font-family: "DM Sans", sans-serif;
   background: #ffffff;
-  padding-bottom: 1000%;
+
+  padding-bottom: 200%;
 }
 
 header {
   width: 100%;
-  /* position: fixed; */
-  /* z-index: 9999; */
+  position: fixed;
+  z-index: 9999;
   top: 0;
   left: 0;
   padding: 2rem 0;
   text-align: center;
   background: var(--clr-wh2);
 
-  /* transition: all 300ms ease-in-out; */
+  transition: all 300ms ease-in-out;
 }
 .flex {
   display: flex;
