@@ -38,44 +38,86 @@ body {
 
 header {
   width: 100%;
-  position: fixed;
-  z-index: 9999;
+  /* position: fixed; */
+  /* z-index: 9999; */
   top: 0;
   left: 0;
   padding: 2rem 0;
   text-align: center;
   background: var(--clr-wh2);
 
-  transition: all 300ms ease-in-out;
+  /* transition: all 300ms ease-in-out; */
 }
-header h1 {
-  color: #161616;
-  font-size: 1.6rem;
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inner {
+  width: 60%;
+  margin: 0 auto;
+}
+.logo {
   font-weight: bold;
-  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: var(--clr-b02);
 }
-/* ==== Crear estilos que después vamos a agrgar en Javascript ===== */
-/*Abajo*/
-header.scroll-down {
-  transform: translate3d(0, -100%, 0);
+nav ul {
+  list-style-type: none;
+  display: flex;
 }
-/*Arriba*/
-header.scroll-up {
-  filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+nav ul a {
+  padding: 1rem 1.5rem;
 }
-/*Menú abierto*/
-header.menu-is-open {
-  overflow: hidden;
+nav ul a:hover {
+  background: var(--clr-wh2);
+  cursor: pointer;
+}
 
-  filter: none;
-}
 /* ==== MAIN ===== */
 main {
   width: 100%;
   margin: 2rem auto;
-  background: lightblue;
+  background: lightgray;
 }
 .section {
   width: 100%;
-  height: 100vh;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.active {
+  font-weight: bold;
+  color: rgb(119, 0, 255);
+  position: relative;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgb(119, 0, 255);
+  height: 0.3rem;
+}
+h1 {
+  margin-top: 4rem;
+  font-size: 3rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+h2 {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+.subhead {
+  font-size: 1.5rem;
+  line-height: 1.4rem;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  padding: 0.5rem;
+  margin: 0.5rem auto;
 }
