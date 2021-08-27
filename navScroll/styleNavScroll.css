@@ -83,6 +83,7 @@ main {
 }
 .section {
   width: 100%;
+  height: 100vh;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -121,4 +122,12 @@ p {
   line-height: 1.6rem;
   padding: 0.5rem;
   margin: 0.5rem auto;
+}
+
+/* === Scroll = stuff === */
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header {
 }
