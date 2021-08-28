@@ -111,6 +111,15 @@ Video Player and Audio with Javascript Vanilla
 - [p5Js](https://p5js.org/es/get-started/)
 - [threeJs](https://threejs.org/)
 
+> Convertir un objeto a Array
+
+- [object entries](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
+
+> Methods / Métodos
+
+- [Method Sort](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+- [method Map](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
 # Library Js
 
 - [pict2pix](https://evaristocuesta.github.io/pict2pix/)
