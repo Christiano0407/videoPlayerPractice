@@ -107,6 +107,9 @@ Video Player and Audio with Javascript Vanilla
 - [Frank Laboratory](https://www.youtube.com/channel/UCEqc149iR-ALYkGM6TG-7vQ)
 - [freeCodeCamp](https://www.youtube.com/watch?v=UoTxOVEecbI&t=1896s)
 - [Bruno Imbrizi](https://www.youtube.com/user/brunoimbrizi)
+- [p5Js](https://editor.p5js.org/p5/sketches)
+- [p5Js](https://p5js.org/es/get-started/)
+- [threeJs](https://threejs.org/)
 
 # Library Js
 
