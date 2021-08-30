@@ -229,6 +229,14 @@ Video Player and Audio with Javascript Vanilla
   > Retina Screen
 - @media (min-width: 1200px) and (max-width:1600px)
 
+# Object Oriented Programming Javascript
+
+> Course Platzi
+
+- [Platzi](https://platzi.com/home)
+  > FreeCodeCamp
+- [freecodecamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-algorithm-scripting)
+
 # Markdown / Readme
 
 - [Editormd](https://pandao.github.io/editor.md/en.html)
