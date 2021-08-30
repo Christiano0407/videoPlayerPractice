@@ -229,8 +229,6 @@ Video Player and Audio with Javascript Vanilla
   > Retina Screen
 - @media (min-width: 1200px) and (max-width:1600px)
 
-# Library CSS and HTML
-
 # Markdown / Readme
 
 - [Editormd](https://pandao.github.io/editor.md/en.html)
