@@ -236,6 +236,19 @@ Video Player and Audio with Javascript Vanilla
 - [Platzi](https://platzi.com/home)
   > FreeCodeCamp
 - [freecodecamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-algorithm-scripting)
+  > Object
+- [Object Js](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object)
+- [Trabajando con Objetos](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects)
+  > Prototype
+- [Prototype Js](https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/Object_prototypes)
+  > Class
+- [Class Js](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Classes)
+  > Methods / Métodos
+- [Methods](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Method_definitions)
+  > This
+- [This Js](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/this)
+  > New Operador
+- [New](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/new)
 
 # Markdown / Readme
 
