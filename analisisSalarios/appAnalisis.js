@@ -72,6 +72,8 @@ medianaSalary = (list) => {
 
 const mediaGeneralUSA = medianaSalary(analSalaryUSASorted);
 
+// ====== Calculate Mediana Top 10% ===== splice() ======= >
+
 // === Llamar a las funciones y eventos == >
 //1=>
 console.log(analSalaryUSA);
