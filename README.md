@@ -168,13 +168,74 @@ Video Player and Audio with Javascript Vanilla
 
 # Inspiration Web Design
 
+- [Jamstack Themes](https://jamstackthemes.dev/#archetype=portfolio)
+- [awwards](https://www.awwwards.com/)
+- [dribble](https://dribbble.com/)
+- [Behance](https://www.behance.net/)
+- [DesignHunt](https://www.designerhunt.io/)
+- [ScreenLane](https://screenlane.com/)
+- [UIsources](https://www.uisources.com/)
+- [MUZ](https://muz.li/)
+- [Material Design](https://material.io/)
+
 # CDN
 
 - [CDN](https://cdnjs.com/)
 
-# Articles and Docs Web
+# NPM
+
+- [npm](https://www.npmjs.com/)
+
+# Images
+
+- [Unsplash](https://unsplash.com/)
+- [Pexels](https://www.pexels.com/)
+  > Peso Image
+- [TinyPNG](https://tinypng.com/)
+
+# Icons
+
+- [fontAwesome](https://fontawesome.com/)
+
+# Fonts
+
+- [GoogleFonts](https://fonts.google.com/)
+- [AdobeFonts](https://fonts.adobe.com/)
+
+# Palette Colors
+
+- [Adobe Color](https://color.adobe.com/es/create/color-wheel)
+- [coolors](https://coolors.co/)
+- [gradients](https://mycolor.space/gradient3)
+- [webGradients](https://webgradients.com/)
+- [Backgrount Gradients](https://cssgradient.io/gradient-backgrounds/)
+- [glassmorphism](https://glassmorphism.com/)
+  > SVG BACKGROUNDS
+- [SVG Color](https://www.svgbackgrounds.com/)
+
+# MediaQueries
+
+- [MyDevice](https://www.mydevice.io/#compare-devices)
+- [ResponsiveViewers](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb)
+- [MediaQueries](https://mediaqueri.es/)
+  > Smartphone
+- @media (min-width: 360px) and (max-width:480px)
+  > Portrait and Landscape
+- @media (min-width: 375px) and (max-width:812px)
+  > Tablet
+- @media (min-width: 480px) and (max-width:768px)
+  > Laptop and Monito
+- @media (min-width: 768px) and (max-width:1024px)
+  > Retina Screen
+- @media (min-width: 1200px) and (max-width:1600px)
 
 # Library CSS and HTML
+
+# Markdown / Readme
+
+- [Editormd](https://pandao.github.io/editor.md/en.html)
+- [Markdown](https://markdown.es/)
+- [readmeSo](https://readme.so/es)
 
 # MIT License
 
