@@ -137,7 +137,34 @@ Video Player and Audio with Javascript Vanilla
 
 # Deploy Web
 
+- [Deploy Github Docs](https://docs.github.com/en)
+
+  > Frontend
+
+- [Netlify](https://www.netlify.com/)
+- [Vercel](https://vercel.com/)
+- [Github Page](https://pages.github.com/)
+
+> Backend
+
+- [Heroku](https://www.heroku.com/)
+- [AWS](https://aws.amazon.com/es/?nc2=h_lg)
+- [Azure](https://azure.microsoft.com/es-mx/)
+
+> Cloud
+
+- [AWS](https://aws.amazon.com/es/?nc2=h_lg)
+- [Azure](https://azure.microsoft.com/es-mx/)
+- [Google Cloud](https://cloud.google.com/)
+- [Firebase](https://firebase.google.com/)
+
 # Domain and Hosting
+
+- [Namecheap](https://www.namecheap.com/)
+- [Google](https://domains.google/intl/es_mx/)
+- [Godaddy](https://mx.godaddy.com/)
+- [HostGator](https://www.hostgator.mx/)
+- [Hostinger](https://www.hostinger.mx/)
 
 # Inspiration Web Design
 
