@@ -256,6 +256,12 @@ Video Player and Audio with Javascript Vanilla
 - [Markdown](https://markdown.es/)
 - [readmeSo](https://readme.so/es)
 
+# Visual Studio Code
+
+> Comands
+
+- [VSC](https://code.visualstudio.com/docs/getstarted/keybindings)
+
 # MIT License
 
 > License
