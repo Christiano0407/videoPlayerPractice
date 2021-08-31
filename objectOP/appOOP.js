@@ -29,5 +29,82 @@ let duck = {
 console.log(duck);
 console.log(duck.name);
 
-//2)
+//2) Create Method on an Object =>
+let ducks = {
+  name: "Ducks",
+  firstName: "Quack",
+  // Method = >
+  sayName: function () {
+    return `The name is ${ducks.name}`;
+  },
+};
+console.log(ducks.sayName());
+
+// 3)
+let person = {
+  name: "Arthur",
+  age: 21,
+  // = Method =
+  sayAge: function () {
+    return `The age is ${person.age}`;
+  },
+};
+console.log(person);
+console.log(person.sayAge());
+console.log(person.hasOwnProperty("name"));
+
+//4) Crear Objetos y prototype o prototipos en javascript >
+// Los objetos literales, sí,  son objetos >
+const girlNatalia = {
+  name: "Natalia",
+  age: 25,
+
+  // = Array =
+  cursosAprobados: [
+    "Curso Definitivo de HTML y CSS",
+    "Curso Práctico de HTML y CSS",
+  ],
+
+  // = Method / Crear Método / Function new =
+  // < Palabra reservada This / This es girlNatalia = Objeto >
+  aprobarCurso(nuevoCurso) {
+    this.cursosAprobados.push(nuevoCurso);
+  },
+};
+console.log(girlNatalia);
+// = Hacer que Natalia apruebe otro curso = Method / Métodos (antes prototype) =
+console.log(girlNatalia.cursosAprobados.push("Curso Orientado a Objetos"));
+console.log(girlNatalia.cursosAprobados.length);
+girlNatalia.aprobarCurso("Curso de Git y Github"); // Nuevo Curso agregado
+console.log(girlNatalia.cursosAprobados);
+console.log(girlNatalia.cursosAprobados.length);
+
+// <<< Instancias de método / Method (prototype) >>> ==== This ====
+
+function Student(name, age, cursosAprobados) {
+  this.name = name;
+  this.age = age;
+  this.cursosAprobados = cursosAprobados;
+
+  // = Otro método por dentro =
+  /* this.aprobarCurso = function (nuevoCurso) { */
+  /*   this.cursosAprobados.push(nuevoCurso); */
+  /* }; */
+}
+// = Mandamos llamar por fuera los métodos =
+Student.prototype.aprobarCurso = function (nuevoCurso) {
+  this.cursosAprobados.push(nuevoCurso);
+};
+// = Llamar al nuevo Student >
+// Obj>
+const Jennifer = new Student("Jennifer", 21, "Curso de CSS Grid");
+// Arra>
+const Alejandra = new Student("Alejandra", 31, [
+  "Curso de CSS Animation",
+  "Curso de Terminal con Linux",
+]);
+
+console.log(Jennifer);
+console.log(Alejandra);
+
 console.groupEnd();
