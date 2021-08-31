@@ -52,7 +52,8 @@ let person = {
 console.log(person);
 console.log(person.sayAge());
 console.log(person.hasOwnProperty("name"));
-
+// <<<< ================================================================================ >>>>>
+// Prototype > Methods >>
 //4) Crear Objetos y prototype o prototipos en javascript >
 // Los objetos literales, sí,  son objetos >
 const girlNatalia = {
@@ -138,4 +139,46 @@ marion.winningMoney(25000);
 console.log(marion);
 marion.other("Athletism");
 console.log(marion);
+
+// <<<< ======================================================================= >>>>>>>>
+// CLASES EN JS
+// Las clases en Javascript, por dentro son Prototipos (prototype) >
+// Una sintaxis parceida a otros lenguajes (prototype = clases), en JS >
+
+// << Palabra reservada "class".
+// << Comienza con Mayúsculas.
+// << Constructor = Meteremos los parámetros.
+// << Palabra reservada This.
+// << Podemos crear métodos / methos.
+
+// constructor puedes crearlo como OBJETO => para agregar más parámetros >
+
+// 1)
+class Gamer {
+  constructor({ name, age, videojuegoTerminado, console, company }) {
+    this.name = name;
+    this.age = age;
+    this.videojuegoTerminado = videojuegoTerminado;
+    this.console = console;
+    this.company = company;
+  }
+  // Crear method > function anonimous >
+  terminadoVideojuego(terminado) {
+    this.videojuegoTerminado.push(terminado);
+  }
+}
+
+const girlGamer = new Gamer({
+  name: "Alma Monster",
+  age: 29,
+  videojuegoTerminado: ["DOOM"],
+  console: "PlayStation 5",
+  company: "Sony",
+});
+
+console.log(Gamer);
+console.log(girlGamer);
+
+// < ============================================================================== >
+
 console.groupEnd();
