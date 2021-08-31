@@ -179,6 +179,34 @@ const girlGamer = new Gamer({
 console.log(Gamer);
 console.log(girlGamer);
 
+// 2) EXAMPLE CLASS ==>
+class Designer {
+  constructor({ name, age, design, speciality }) {
+    this.name = name;
+    this.age = age;
+    this.design = design;
+    this.speciality = speciality;
+  }
+  // methods >
+  designAdd(brandDesign) {
+    this.speciality.push(brandDesign);
+  }
+  // second method >
+  addDesignColor(colorAdd) {
+    this.speciality.unshift(colorAdd);
+    this.design.unshift(colorAdd);
+  }
+}
+const allDesigner = new Designer({
+  name: "Pammela Rosa",
+  age: 31,
+  design: ["Brand Designer"],
+  speciality: ["Photoshop", "Ilustrator", "After Effects"],
+});
+console.log(Designer);
+console.log(allDesigner);
+allDesigner.addDesignColor("Brand Color");
+console.log(allDesigner);
 // < ============================================================================== >
 
 console.groupEnd();
