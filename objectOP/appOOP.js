@@ -80,7 +80,7 @@ console.log(girlNatalia.cursosAprobados);
 console.log(girlNatalia.cursosAprobados.length);
 
 // <<< Instancias de método / Method (prototype) >>> ==== This ====
-
+//1)
 function Student(name, age, cursosAprobados) {
   this.name = name;
   this.age = age;
@@ -108,5 +108,34 @@ console.log(Jennifer);
 console.log(Alejandra);
 
 // ==== Example Two === Method ===
+//2) Instance method / prototype
+function Sport(name, age, discipline, money) {
+  this.name = name;
+  this.age = age;
+  this.discipline = discipline;
+  this.money = money;
+}
+// Create Method >
+Sport.prototype.winningMoney = function (newMoney) {
+  this.money.push(newMoney);
+};
 
+Sport.prototype.other = function (newDiscipline) {
+  this.discipline.unshift(newDiscipline);
+};
+// new Person >
+const LebronJames = new Sport("Lebron James", 31, "Basketball", [1000000]);
+const marion = new Sport("Marion Reimers", 30, ["Soccer"], [15000]);
+
+// Llamar >
+console.log(Sport);
+console.log(LebronJames);
+LebronJames.winningMoney(3000000);
+console.log(LebronJames);
+//>
+console.log(marion);
+marion.winningMoney(25000);
+console.log(marion);
+marion.other("Athletism");
+console.log(marion);
 console.groupEnd();
