@@ -107,4 +107,6 @@ const Alejandra = new Student("Alejandra", 31, [
 console.log(Jennifer);
 console.log(Alejandra);
 
+// ==== Example Two === Method ===
+
 console.groupEnd();
