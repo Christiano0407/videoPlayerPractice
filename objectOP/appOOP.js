@@ -91,7 +91,7 @@ function Student(name, age, cursosAprobados) {
   /*   this.cursosAprobados.push(nuevoCurso); */
   /* }; */
 }
-// = Mandamos llamar por fuera los métodos =
+// = Mandamos llamar por fuera los métodos = Creamos un Método = aprobarCurso >
 Student.prototype.aprobarCurso = function (nuevoCurso) {
   this.cursosAprobados.push(nuevoCurso);
 };
