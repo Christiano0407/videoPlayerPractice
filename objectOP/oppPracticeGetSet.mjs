@@ -4,7 +4,34 @@ console.group("Getter and Setters Javascript");
 // << ============================================================================ >>
 // >>>>>>>>>>>>> >>>>>>>>>>>>>>>>>>>>>>>>>>>> >>>>>>>>>
 // Module >>>>
-// Import
+// Export >>>>>>>>>>>>>>>>>>>>>
+
+// > Función para llamar al ID
+function videoPlay(id) {
+  const urlSecret = "http://platziUltraSecreta.com/" + id;
+  console.log("Reproduciendo la url" + urlSecret);
+}
+
+function videoStop(id) {
+  const urlStop = "http://platziUltraSecreta.com/" + id;
+  console.log("Pausamos la url" + urlStop);
+}
+
+// ========>
+export class PlatziClass {
+  constructor({ name, videoID }) {
+    this.name = name;
+    this.videoID = videoID;
+  }
+  // Método (Method) para reproducirse >
+  reproducir() {
+    videoPlay(this.videoID);
+  }
+  // Método (Method) para pausar la clase >
+  pausar() {
+    videoStop(this.videoID);
+  }
+}
 
 // >> ================== >>
 class Course {
