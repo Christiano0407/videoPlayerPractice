@@ -4,16 +4,16 @@ console.group("Getter and Setters Javascript");
 // << ============================================================================ >>
 class Course {
   constructor({ name, classes = [] }) {
-    this._name = name; //(No puedan ser llamados)
+    this._name = name; //(No puedan ser llamados) / cuando tienen un (_).
     this._classes = classes;
   }
-  // getter =No puede ser llamado.
+  // getter =No puede ser llamado. / Invocado como método (()), pero, al llamarlo no es necesario.
   get name() {
     return this._name;
   }
-  //setter > Permite cambiar y ser llamado.
+  //setter > Permite cambiar y ser llamado. / Encapsulamient0.
   set name(nuevoNombrecito) {
-    // Evitar nombres al ser llamado
+    // Evitar nombres al ser llamado / Condicional => Validar que no puedan cambiar el nombre.
     if (nuevoNombrecito === "Curso Malito de Programación Básica") {
       console.error("Web... no!");
     } else {
@@ -25,10 +25,13 @@ class Course {
 const cursoProgBasica = new Course({
   name: "Curso Gratis de Programación Básica", // Podemos agregarlo a otro NEW.
 });
-// getter (evitar llamar)
+// > getter (evitar llamar)
 /* cursoProgBasica.name; */
 // Curso Gratis de Programación Básica
-// setter (cambiar nombre y llamar)
+// > setter (cambiar nombre y llamar)
+
+// << cursoProgBasico.name = "NuevoCursoProgramaciónBásico" = Nuevo nombre asignado / mando crear y llamar.
+// << cursoProgBasico.name = "CursoMalito de Programación Básica" => Me va a saltar el "error" => Le prohibimos llamar el curso de esa forma.
 
 cursoProgBasica;
 const cursoDefinitivoHTML = new Course({
