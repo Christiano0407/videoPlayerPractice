@@ -3,7 +3,6 @@ console.group("Getter and Setters Javascript");
 // Palabra deribada get (getters) / (captador) => Enlaza la propiedad de un objeto con una función que será llamada cuando la propiedad es buscada.
 // << ============================================================================ >>
 
-// < Módulos de ECMAScript 6 >
 class PlatziClass {
   constructor({ name, videoID }) {
     this.name = name;
