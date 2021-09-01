@@ -249,6 +249,9 @@ Video Player and Audio with Javascript Vanilla
 - [This Js](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/this)
   > New Operador
 - [New](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/new)
+  > Encapsulamiento Getters y Setter
+- [setters](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/set)
+- [getters](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/get)
 
 # Markdown / Readme
 
