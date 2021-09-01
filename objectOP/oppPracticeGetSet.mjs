@@ -2,18 +2,11 @@ console.group("Getter and Setters Javascript");
 // => Encapsulamiento <=
 // Palabra deribada get (getters) / (captador) => Enlaza la propiedad de un objeto con una función que será llamada cuando la propiedad es buscada.
 // << ============================================================================ >>
-
-class PlatziClass {
-  constructor({ name, videoID }) {
-    this.name = name;
-    this.videoID = videoID;
-  }
-  // Método (Method) para reproducirse >
-
-  // Método (Method) para pausar la clase >
-}
-
 // >>>>>>>>>>>>> >>>>>>>>>>>>>>>>>>>>>>>>>>>> >>>>>>>>>
+// Module >>>>
+// Import
+
+// >> ================== >>
 class Course {
   constructor({ name, classes = [] }) {
     this._name = name; //(No puedan ser llamados) / cuando tienen un (_).
