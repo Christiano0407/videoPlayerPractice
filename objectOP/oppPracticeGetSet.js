@@ -2,6 +2,19 @@ console.group("Getter and Setters Javascript");
 // => Encapsulamiento <=
 // Palabra deribada get (getters) / (captador) => Enlaza la propiedad de un objeto con una función que será llamada cuando la propiedad es buscada.
 // << ============================================================================ >>
+
+// < Módulos de ECMAScript 6 >
+class PlatziClass {
+  constructor({ name, videoID }) {
+    this.name = name;
+    this.videoID = videoID;
+  }
+  // Método (Method) para reproducirse >
+
+  // Método (Method) para pausar la clase >
+}
+
+// >>>>>>>>>>>>> >>>>>>>>>>>>>>>>>>>>>>>>>>>> >>>>>>>>>
 class Course {
   constructor({ name, classes = [] }) {
     this._name = name; //(No puedan ser llamados) / cuando tienen un (_).
@@ -121,3 +134,6 @@ const miguelito2 = new Student({
 console.log(juan2);
 console.log(miguelito2);
 console.groupEnd();
+
+// <<< =========================================================================== >>>
+// < Módulos de ECMAScript 6 >
