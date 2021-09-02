@@ -82,3 +82,52 @@ form div input {
   padding: 0 3rem;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
+label {
+  display: block;
+  margin-block-end: 0.5rem;
+}
+form div {
+  position: relative;
+  margin-block-end: 0.5rem;
+}
+input:is(:focus) {
+  border: 2px solid #f2796e;
+}
+/*Style Social section */
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.btn-1,
+.btn-2 {
+  padding: 1rem 0.5rem;
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #c4c4c4;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.btn-2 {
+  background-color: #4f70b5;
+  color: #ffffff;
+}
+.or {
+  text-align: center;
+}
+.question {
+  font-size: 1.5rem;
+}
+span {
+  color: #f2796e;
+  cursor: pointer;
+}
+/*Style form icon*/
+form div i {
+  position: absolute;
+  padding: 1rem;
+}
