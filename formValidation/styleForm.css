@@ -25,3 +25,36 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.container {
+  width: 55%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  /*   border: 2px solid red; */
+  background-color: #f2796e;
+  padding: 1rem 2rem;
+}
+/*style rules for content section*/
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.image {
+  background-image: url(/src/assets/image/illustration.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  height: 65%;
+  /* border: solid 2px black; */
+}
+.text {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/*Style form*/
