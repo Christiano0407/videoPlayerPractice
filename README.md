@@ -253,6 +253,14 @@ Video Player and Audio with Javascript Vanilla
 - [setters](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/set)
 - [getters](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/get)
 
+# Form
+
+> Method
+
+- [trim](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
+  > Event
+- [preventDefault](https://developer.mozilla.org/es/docs/Web/API/Event/preventDefault)
+
 # Markdown / Readme
 
 - [Editormd](https://pandao.github.io/editor.md/en.html)
