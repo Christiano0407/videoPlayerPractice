@@ -253,13 +253,16 @@ Video Player and Audio with Javascript Vanilla
 - [setters](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/set)
 - [getters](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/get)
 
-# Form
+# Form / Formulario
 
 > Method
 
 - [trim](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
   > Event
 - [preventDefault](https://developer.mozilla.org/es/docs/Web/API/Event/preventDefault)
+  > Serial / API
+- [serial](https://developer.mozilla.org/en-US/docs/Web/API/Serial)
+- [serial_API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API)
 
 # Markdown / Readme
 
