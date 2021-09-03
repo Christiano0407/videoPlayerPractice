@@ -260,6 +260,8 @@ Video Player and Audio with Javascript Vanilla
 - [extends JS](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Classes/extends)
   > Super JS / La palabra clave super es usada para acceder y llamar funciones del padre de un objeto.
 - [super Js](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/super)
+  > Pasar de Class a Prototype
+- [inherit Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
 # Form / Formulario
 

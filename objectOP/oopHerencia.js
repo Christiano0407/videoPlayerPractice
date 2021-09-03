@@ -235,3 +235,24 @@ console.log(erika1.approvedCourse(cursoPracticoHTML));
 console.log(erika1);
 
 console.groupEnd();
+
+//  <<<<<<<<<<<<<<<< Class a prototype ========================================= > ========================================== >
+// Respuesta a: Herencia en JavaScript Para hacer la herencia usando la sintaxis de prototipos podemos hacer lo siguiente:
+// Prototype>
+
+/* functionFreeStudent(props) { */
+/*   Student.call(this, props); */
+/* } */
+
+/* FreeStudent.prototype = Object.create(Student.prototype); */
+
+/* FreeStudent.prototype.approveCourse = function (newCourse) { */
+/*   if (newCourse.isFree) { */
+/*     this.approvedCourses.push(newCourse); */
+/*   } else { */
+/*     console.warn(`Lo sentimos, ${this.name}, sólo puedes tomar cursos gratis`); */
+/*   } */
+/* }; */
+
+// Detalle >
+// Solo un pequeño detalle a corregir… Las funciones “constructoras” de los prototipos (en tu caso, FreeStudent) se guardan en el prototype… Cuando haces FreeStudent.prototype = Object.create(Student.prototype) estás sobreescribiendo por completo el prototype de FreeStudent, por lo que estás pisando la función constructora que creaste primero. Es importante que luego de ese paso, hagas FreeStudent.prototype.constructor = FreeStudent… Así vuelves a agregar la función constructora que definiste como FreeStudent al prototype.
