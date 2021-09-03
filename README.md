@@ -27,6 +27,8 @@ Video Player and Audio with Javascript Vanilla
 
 # Guide and Resource Web
 
+> Learn Programming and Javascript
+
 - [Resource for Developers / Github](https://github.com/zero-to-mastery/resources)
 - [awwwards](https://www.awwwards.com/)
 - [Resource Web-Design](https://github.com/zero-to-mastery/resources)
@@ -38,6 +40,8 @@ Video Player and Audio with Javascript Vanilla
 - [Css-Trick](https://css-tricks.com/guides/)
 - [W3School](https://www.w3schools.com/default.asp)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
+- [javascript Info](https://javascript.info/)
+- [guru99 JS](https://www.guru99.com/)
 
 # Guide and Recourses Video Play
 
@@ -252,6 +256,8 @@ Video Player and Audio with Javascript Vanilla
   > Encapsulamiento Getters y Setter
 - [setters](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/set)
 - [getters](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/get)
+  > Extends
+- [extends JS](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Classes/extends)
 
 # Form / Formulario
 
