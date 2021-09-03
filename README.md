@@ -258,6 +258,8 @@ Video Player and Audio with Javascript Vanilla
 - [getters](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/get)
   > Extends
 - [extends JS](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Classes/extends)
+  > Super JS / La palabra clave super es usada para acceder y llamar funciones del padre de un objeto.
+- [super Js](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/super)
 
 # Form / Formulario
 
