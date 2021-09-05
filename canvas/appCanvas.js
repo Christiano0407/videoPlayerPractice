@@ -28,31 +28,41 @@ canvas.height = window.innerHeight;
 // Cuadrado>>>>>>
 //ctx.fillRect(200, 100, 100, 100);
 
-// Function / animation / loop
-// = VAR=
+// ====== Function / Events ======
+// === VAR/let/const ====
 let size = 0;
 let positionX = 0;
+let positionY = 0;
 
-//Func/event
+// funct draw flowers >>>>>>>>>
+function drawFlowers() {
+  ctx.fillStyle = "Red";
+  ctx.lineWidth = 5;
+  ctx.strokeStyle = "blue";
+  ctx.beginPath();
+  ctx.arc(positionX, positionY, size, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.closePath();
+  ctx.stroke();
+}
+
+//Func/event animation >>>>>>>>>
 function animate() {
   //draw each frame
   //limpiar/ medidas principio
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   // Method>
   size += 0.05;
-  positionX += 0.1;
-
-  ctx.fillStyle = "Red";
-  ctx.lineWidth = 5;
-  ctx.strokeStyle = "blue";
-  ctx.beginPath();
-  ctx.arc(positionX, 300, size, 0, Math.PI * 2);
-  ctx.fill();
-  ctx.closePath();
-  ctx.stroke();
+  positionX += 0.5;
+  positionY += 0.5;
+  // Llamar a drawFlower
+  drawFlowers();
   //Petición a la animación a ejecutar ----
   requestAnimationFrame(animate);
 }
+
+// < ===================== Invocar ============================= >
+//drawFlowers();
 //animate();
 
 // ===== >
