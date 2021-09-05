@@ -18,6 +18,7 @@ html {
 }
 body {
   width: 100%;
+  overflow: hidden;
 }
 ul {
   list-style: none;
@@ -31,4 +32,13 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+#canvas1 {
+  position: absolute;
+  border: 2px solid black;
+  background: lightblue;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
