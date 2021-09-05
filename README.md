@@ -274,6 +274,22 @@ Video Player and Audio with Javascript Vanilla
 - [serial](https://developer.mozilla.org/en-US/docs/Web/API/Serial)
 - [serial_API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API)
 
+# CANVAS
+
+> Canvas Project
+
+- [Frank Laboratory](https://www.youtube.com/channel/UCEqc149iR-ALYkGM6TG-7vQ)
+- [Bruno Imbrizi](https://www.youtube.com/c/BrunoImbrizi/videos)
+- [Canvas Beginners](https://www.youtube.com/watch?v=ymmtEgp0Tuc&t=17s)
+- [Canvas Master](https://www.youtube.com/watch?v=Yvz_axxWG4Y&t=13s)
+- [Canvas Rotation](https://www.youtube.com/watch?v=aO1VcJ5WpKI&t=19s)
+
+# API
+
+> API Project and Courese
+
+- [API Beginners/freecodeCamp](https://www.youtube.com/watch?v=GZvSYJDk-us&t=8s)
+
 # Markdown / Readme
 
 - [Editormd](https://pandao.github.io/editor.md/en.html)
