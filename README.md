@@ -295,6 +295,11 @@ Video Player and Audio with Javascript Vanilla
 - [Web gl](https://get.webgl.org/)
   > Three Js
 - [Three Js](https://threejs.org/)
+  > Math
+- [Math](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math)
+- [Math.sin](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/sin)
+- [Math.cos](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/cos)
+- [Math.sqrt](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt)
 
 # API
 

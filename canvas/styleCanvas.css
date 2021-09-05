@@ -36,7 +36,7 @@ img {
 #canvas1 {
   position: absolute;
   border: 2px solid black;
-  background: lightblue;
+  background: #ffffff;
   top: 0;
   left: 0;
   width: 100%;
