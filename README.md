@@ -263,6 +263,20 @@ Video Player and Audio with Javascript Vanilla
   > Pasar de Class a Prototype
 - [inherit Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
+## Object Oriented Programming Javascript Part TWO / Javascript
+
+> Static
+
+- [Static](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Classes/static)
+  > Keys
+- [Keys](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
+  > getOwnPropertyNames
+- [getOwnPropertyNames](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames)
+  > entries
+- [entries](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
+  > getOwnPropertyDescriptors
+- [getOwnPropertyDescriptors](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor)
+
 # Form / Formulario
 
 > Method
