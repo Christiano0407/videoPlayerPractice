@@ -279,6 +279,8 @@ Video Player and Audio with Javascript Vanilla
   > getOwnPropertyDescriptors
 - [getOwnPropertyDescriptors](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor)
 - [defineProperty](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
+- [seal](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/seal)
+- [freeze](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze)
 
 # Form / Formulario
 
@@ -323,6 +325,20 @@ Video Player and Audio with Javascript Vanilla
 > API Project and Courese
 
 - [API Beginners/freecodeCamp](https://www.youtube.com/watch?v=GZvSYJDk-us&t=8s)
+
+# VideoGames
+
+> Library Js
+
+- [Kaboom Js](https://kaboomjs.com/)
+
+# Animation Js
+
+- [p5js](https://p5js.org/es/)
+- [gsap](https://greensock.com/gsap/)
+- [threeJs](https://threejs.org/)
+- [anime Js](https://animejs.com/)
+- [WebGl](https://get.webgl.org/)
 
 # Markdown / Readme
 
