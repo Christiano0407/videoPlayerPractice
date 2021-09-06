@@ -278,6 +278,7 @@ Video Player and Audio with Javascript Vanilla
 - [entries](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
   > getOwnPropertyDescriptors
 - [getOwnPropertyDescriptors](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor)
+- [defineProperty](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
 
 # Form / Formulario
 
