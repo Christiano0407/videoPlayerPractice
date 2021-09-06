@@ -25,7 +25,7 @@ const mouse = {
 canvas.addEventListener(`click`, function (event) {
   mouse.x = event.x;
   mouse.y = event.y;
-
+  // active function >
   drawCircle();
 });
 // especie de gusano> mouse>
@@ -38,15 +38,23 @@ canvas.addEventListener("mousemove", function (e) {
 
 // === >Círculo>
 function drawCircle() {
-  ctx.fillStyle = "#ffffff";
+  //ctx.fillStyle = "#ffffff";
   ctx.strokeStyle = "#ffffff";
-  ctx.lineWidth = 2;
+  ctx.lineWidth = 5;
   ctx.beginPath();
   ctx.arc(mouse.x, mouse.y, 50, 0, Math.PI * 2);
-  ctx.fill();
+  //ctx.fill();
   ctx.stroke();
 }
-drawCircle();
+//drawCircle();
+// ==> función animación >>
+animate = () => {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  drawCircle();
+  requestAnimationFrame(animate);
+};
+animate();
+
 // ===> Cuadrado>
 /* ctx.fillStyle = "#ffffff"; */
 /* ctx.fillRect(50, 50, 150, 150); */
