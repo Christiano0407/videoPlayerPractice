@@ -42,17 +42,18 @@ console.log(Object.getOwnPropertyDescriptors(person));
 // 1) Objeto.
 // 2) Nombre de la propiedad que le voy a agregar.
 // 3) Mandar un objeto({})
+// >>>> Les vamos a restringir los permisos ========>
 Object.defineProperty(person, "PruebaNasa", {
-  value: "extraterrestre",
-  enumerable: false, // Puede aparecer o no (depende).
-  writable: true,
+  value: "extraterrestre", // Valor de mi nueva propiedad (PruebaNasa).
+  enumerable: false, // Puede aparecer o no (depende) en tus propiedades.
+  writable: true, // No permite editar la propiedad.
   configurable: true, // Impide que borres propiedades.
 });
 console.log(Object.getOwnPropertyDescriptors(person));
 
 Object.defineProperty(person, "Console", {
   value: "PlayStation 5",
-  enumerable: true,
+  enumerable: false,
   writable: false,
   configurable: false,
 });
@@ -61,8 +62,18 @@ console.log(Object.getOwnPropertyDescriptors(person));
 console.log(Object.keys(person));
 // > enumerable > false = Sí aparce (getOwn) >
 console.log(Object.getOwnPropertyNames(person));
-console.groupEnd();
 
-// Otros métodos estáticos de Object >>>>
+//> example >
+console.log(person);
+/* console.log((person.name = "Pammela")); */
+/* console.log((person.PruebaNasa = "Nintendo")); */
+/* console.log(person); */
+
+// Otros métodos estáticos de Object >>>> Restringir Acceso y cambios >>>>>
+// ENCAPSULAMIENTO
+// Evita que se puedan cambiar o editar mis propiedades (person)>
 Object.seal(); // El método Object.seal() sella un objeto, previniendo que puedan añadirse nuevas propiedades al mismo, y marcando todas las propiedades existentes como no-configurables. Los valores de las propiedades presentes permanecen pudiendo cambiarse en tanto en cuanto dichas propiedades sean de escritura.
+// Evita que mis propiedades se puedan borrar (person) >>>
 Object.freeze(); // El método Object.freeze() congela un objeto, es decir: impide que se le agreguen nuevas propiedades; impide que se puedan eliminar las propiedades ya existentes; impide que dichas propiedades, o su capacidad de enumeración, configuración, o escritura, puedan ser modificadas; impide también que se pueda modificar su prototipo. El método devuelve el objeto recibido.
+
+console.groupEnd();
