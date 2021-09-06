@@ -1,0 +1,39 @@
+:root {
+  --clr-black: #000;
+  --clr-white: #fff;
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+img {
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  overflow: hidden;
+}
+
+#canvas1 {
+  position: absolute;
+  background: var(--clr-black);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
