@@ -42,6 +42,8 @@ Video Player and Audio with Javascript Vanilla
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
 - [javascript Info](https://javascript.info/)
 - [guru99 JS](https://www.guru99.com/)
+- [p5js](https://p5js.org/es/)
+- [Jamstack](https://jamstackthemes.dev/)
 
 # Guide and Recourses Video Play
 
