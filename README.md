@@ -282,6 +282,8 @@ Video Player and Audio with Javascript Vanilla
 - [defineProperty](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
 - [seal](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/seal)
 - [freeze](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze)
+- [ssign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+- [create](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
 
 # Form / Formulario
 
