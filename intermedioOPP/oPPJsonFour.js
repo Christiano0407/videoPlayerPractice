@@ -15,15 +15,15 @@ const obj1 = {
 };
 
 // Objeto a string >
-const obj2 = JSON.stringify(obj1);
+const stringContext = JSON.stringify(obj1);
 // De un String a un Objeto >
 // Tomamos como base el "string" de "obj2", para convertir a un objeto (JSON) >
-const obj3 = JSON.parse(obj2);
+const objNew = JSON.parse(stringContext);
 // ============================= Llamar >
 console.log(obj1);
 // >
-console.log(obj2);
+console.log(stringContext);
 // >
-console.log(obj3);
+console.log(objNew);
 
 console.groupEnd();
