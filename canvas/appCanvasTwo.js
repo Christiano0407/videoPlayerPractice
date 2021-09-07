@@ -28,13 +28,22 @@ canvas.addEventListener(`click`, function (event) {
   mouse.y = event.y;
   // active function >
   //drawCircle();
+
+  // click => Aparecer las partículas >
+  for (let index = 0; index < 10; index++) {
+    particleArray.push(new Particle());
+  }
 });
 // especie de gusano> mouse>
 canvas.addEventListener("mousemove", function (e) {
   mouse.x = e.x;
   mouse.y = e.y;
-
   //drawCircle();
+
+  // click => Aparecer las partículas >
+  for (let index = 0; index < 10; index++) {
+    particleArray.push(new Particle());
+  }
 });
 
 // === >Círculo>
@@ -54,36 +63,58 @@ class Particle {
   constructor() {
     this.x = mouse.x;
     this.y = mouse.y;
-    this.size = Math.random * 5 + 1;
+    //this.x = Math.random() * canvas.width;
+    //this.y = Math.random() * canvas.height;
+
+    this.size = Math.random() * 10 + 1;
     this.speedX = Math.random() * 1.5 - 1.5;
     this.speedY = Math.random() * 1.5 - 1.5;
   }
   update() {
     this.x += this.speedX;
     this.y += this.speedY;
+
+    if (this.size > 0.2) this.size -= 0.1;
   }
   draw() {
     ctx.fillStyle = "#ffffff";
     //ctx.strokeStyle = "#ffffff";
     ctx.lineWidth = 5;
     ctx.beginPath();
-    ctx.arc(this.x, this.y, 50, 0, Math.PI * 2);
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
     ctx.fill();
     //ctx.stroke();
   }
 }
 
 // ==> Iniciar las particle >
-init = () => {
-  for (let i = 0; i < 100; i++) {
-    particleArray.push(new Particle());
+/* init = () => { */
+/*   for (let i = 0; i < 100; i++) { */
+/*     particleArray.push(new Particle()); */
+/*   } */
+/* }; */
+/* init(); */
+//console.log(particleArray);
+
+//==> index = i; ==>
+function handleParticles() {
+  for (let i = 0; i < particleArray.length; i++) {
+    particleArray[i].update();
+    particleArray[i].draw();
+
+    if (particleArray[i].size <= 0.3) {
+      particleArray.splice(i, 1); //delete / replace => splice.
+      //console.log(particleArray.length);
+      i--;
+    }
   }
-};
+}
 
 // ==> función animación >>
 animate = () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   //drawCircle();
+  handleParticles();
   requestAnimationFrame(animate);
 };
 animate();
