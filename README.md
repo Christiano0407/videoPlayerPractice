@@ -292,6 +292,7 @@ Video Player and Audio with Javascript Vanilla
 - [isSealed](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed)
   > Article JS RORO
 - [freecodecamp/RORO](https://www.freecodecamp.org/news/elegant-patterns-in-modern-javascript-roro-be01e7669cbd/)
+- [medium Js](https://medium.com/tag/javascript)
 
 # Form / Formulario
 
