@@ -289,6 +289,9 @@ Video Player and Audio with Javascript Vanilla
 - [Json parse](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 - [medium article](https://medium.com/@pmzubar/why-json-parse-json-stringify-is-a-bad-practice-to-clone-an-object-in-javascript-b28ac5e36521)
 - [type Of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+- [isSealed](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed)
+  > Article JS RORO
+- [freecodecamp/RORO](https://www.freecodecamp.org/news/elegant-patterns-in-modern-javascript-roro-be01e7669cbd/)
 
 # Form / Formulario
 
