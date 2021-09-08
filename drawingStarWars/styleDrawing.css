@@ -136,3 +136,63 @@ body {
   top: 4px;
   right: 4px;
 }
+.eye.two {
+  background: #ddd2c2;
+  border: 1px solid #06060e;
+  height: 16px;
+  width: 16px;
+  top: 30px;
+  left: 40%;
+}
+.eye.two::after {
+  background: #07070b;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.body {
+  background: #ded7ce;
+  border-radius: 50%;
+  height: var(--size);
+  overflow: hidden;
+  position: relative;
+  width: var(--size);
+}
+.lines {
+  border: 2px solid rgb(167, 145, 108);
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  opacity: 0.6;
+}
+.lines.two {
+  top: -10px;
+  left: -250px;
+}
+.circle {
+  background: rgb(180, 102, 54);
+  border-radius: 50%;
+  height: 70px;
+  margin-left: -35px;
+  width: 70px;
+  position: absolute;
+}
+.circle::after {
+  background: #d1c3ad;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 70%;
+  margin-top: -35%;
+  margin-left: -35%;
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+}
