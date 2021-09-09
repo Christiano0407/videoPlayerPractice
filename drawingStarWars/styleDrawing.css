@@ -42,8 +42,10 @@ body {
   position: absolute;
   margin-left: 0;
   bottom: 20%;
-  left: 10%;
+  left: 0;
   z-index: 4;
+  top: 10px;
+  animation: wobble 5s ease-in-out infinite;
 }
 .radios {
   position: absolute;
@@ -80,6 +82,7 @@ body {
   z-index: 1;
   top: -46px;
   left: 50%;
+  border: 4px solid #000;
 }
 .band {
   position: absolute;
@@ -108,12 +111,12 @@ body {
   position: absolute;
   width: 100%;
   transition: left 0.6s;
-  left: 0%;
+  left: 36%;
   z-index: 10;
 }
-.eye.right {
-  left: 36%;
-}
+/* .eye.right { */
+/*   left: 36%; */
+/* } */
 .eye {
   border-radius: 50%;
   display: block;
@@ -164,6 +167,9 @@ body {
   overflow: hidden;
   position: relative;
   width: var(--size);
+  border: 4px solid #000;
+
+  animation: roll 5.2s linear infinite;
 }
 .lines {
   border: 2px solid rgb(167, 145, 108);
@@ -233,7 +239,7 @@ body {
   width: var(--size);
   z-index: -1;
   left: 5px;
-  bottom: -8px;
+  /* bottom: -8px; */
 }
 
 .cloud {
@@ -281,4 +287,14 @@ body {
 }
 .cloud4 {
   animation: move-cloud 20s linear reverse infinite;
+}
+/*animation two*/
+.loader {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 140px;
+  /*  border: 1px solid black; */
 }
