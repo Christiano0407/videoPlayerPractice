@@ -1,3 +1,5 @@
+@import url(../drawingStarWars/drawingkeyframes.css);
+
 *,
 ::before,
 ::after {
@@ -280,13 +282,3 @@ body {
 .cloud4 {
   animation: move-cloud 20s linear reverse infinite;
 }
-
-@keyframes move-cloud {
-  0% {
-    left: 130%;
-  }
-
-  100% {
-    left: -30%;
-  }
-} ;

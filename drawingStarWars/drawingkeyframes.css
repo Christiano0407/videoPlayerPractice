@@ -1,0 +1,9 @@
+@keyframes move-cloud {
+  0% {
+    left: 130%;
+  }
+
+  100% {
+    left: -30%;
+  }
+} ;
