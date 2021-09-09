@@ -294,6 +294,8 @@ Video Player and Audio with Javascript Vanilla
   > Article JS RORO
 - [freecodecamp/RORO](https://www.freecodecamp.org/news/elegant-patterns-in-modern-javascript-roro-be01e7669cbd/)
 - [medium Js](https://medium.com/tag/javascript)
+  > Duck Typing
+- [Duck Typing](https://www.etnassoft.com/2011/02/07/duck-typing-en-javascript-chequeando-los-tipos-de-datos/)
 
 # Form / Formulario
 
