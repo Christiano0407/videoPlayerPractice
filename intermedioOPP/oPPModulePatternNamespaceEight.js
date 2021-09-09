@@ -34,6 +34,7 @@ function createStudent({
   // factory function>
   // Mantener mi objecto / no quiero que se puedan cambiar >
   const private = {
+    // protegida>
     _name: name,
   };
   // Estos sí los pueden ver / los pueden cambiar >
@@ -48,12 +49,24 @@ function createStudent({
     },
     //method>
     readName() {
-      return private.name;
+      return private["_name"];
     },
     changeName(newName) {
-      private.name = newName;
+      private["_name"] = newName;
     },
   };
+  //Evitar ser editados readname >>
+  Object.defineProperty(public, "readName", {
+    //evitar los puedan borrar / evitar editar >
+    writable: false,
+    configurable: false,
+  });
+
+  //Evitar ser editado changeName >>
+  Object.defineProperty(public, "changeName", {
+    writable: false,
+    configurable: false,
+  });
 
   return public;
 }
@@ -78,9 +91,11 @@ const erika = createStudent({
 
 // >>> Invocar =========>
 console.log(createStudent);
+//>>
+pammela.changeName = "Pammela Velázquez Oviedo"; // => writable > true > para se pueda editar.
 console.log(pammela);
-//ammela.changeName = "Pammela Oviedo de Velázquez";
-//console.log(pammela);
+//>>
+erika.changeName = "Erika Luna"; // => writable > true > para se pueda editar.
 console.log(erika);
 
 console.groupEnd();
