@@ -213,8 +213,80 @@ body {
 .circle.two::after {
   top: 110%;
 }
+.circle.three {
+  height: 30px;
+  transform: rotate(-50deg);
+  top: 66%;
+  left: 90%;
+}
+.circle.three::after {
+  top: 110%;
+}
 .shadow {
   background: rgb(70, 50, 38);
   border-radius: 50%;
   height: calc((var(--size) / 6));
+  opacity: 0.8;
+  position: absolute;
+  width: var(--size);
+  z-index: -1;
+  left: 5px;
+  bottom: -8px;
 }
+
+.cloud {
+  position: absolute;
+  top: 10%;
+  left: -30%;
+  /* left: 0; */
+  height: 2rem;
+  border-radius: 2rem;
+  width: 10rem;
+  background-color: rgb(148, 147, 152);
+  box-shadow: inset 0rem -0.5rem 0 #d9d9d9;
+  animation: move-cloud linear infinite;
+  z-index: 1;
+}
+.cloud::before {
+  content: "";
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: inherit;
+}
+.cloud::after {
+  content: "";
+  position: absolute;
+  bottom: 25%;
+  right: 30%;
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: 50%;
+  background-color: inherit;
+}
+.cloud2 {
+  top: 20%;
+  left: 10%;
+  animation: move-cloud 45s linear reverse infinite;
+}
+.cloud3 {
+  top: 15%;
+  animation: move-cloud 25s linear reverse infinite;
+  transform: scale(1.5);
+}
+.cloud4 {
+  animation: move-cloud 20s linear reverse infinite;
+}
+
+@keyframes move-cloud {
+  0% {
+    left: 130%;
+  }
+
+  100% {
+    left: -30%;
+  }
+} ;
