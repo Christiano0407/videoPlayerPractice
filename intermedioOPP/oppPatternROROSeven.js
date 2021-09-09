@@ -57,7 +57,7 @@ function deepCopy(subject) {
 // Validar nuestra copia>>
 //const obj2 = deepCopy(obj1);
 
-// <<< PART TWO >>> ===================================>
+// <<< PART TWO >>> =================================== >> ======================================================================= >> ==================================== >
 //> Factory Pattern and RORO (RECIBIR UN OBJETO, Y VAMOS A RETORNAR UN OBJETO) / (Receive Object and Return Object) ========>>>>>>
 // >> Retornar el objeto, puede tener muchas propiedades>
 
@@ -111,7 +111,13 @@ const pammela = createStudent({
   tiktok: "livePamm",
 });
 
+const erika = createStudent({
+  name: "Erika Luna",
+  email: "lunEr@gmail.com",
+});
+
 // >>> Invocar =========>
 console.log(createStudent);
 console.log(pammela);
+console.log(erika);
 console.groupEnd();
