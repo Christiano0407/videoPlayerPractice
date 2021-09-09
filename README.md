@@ -45,6 +45,7 @@ Video Player and Audio with Javascript Vanilla
 - [p5js](https://p5js.org/es/)
 - [Jamstack](https://jamstackthemes.dev/)
 - [Javascripting Library](https://www.javascripting.com/)
+- [Javascript info](https://javascript.info/)
 
 # Guide and Recourses Video Play
 
