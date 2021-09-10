@@ -32,11 +32,38 @@ myImage.addEventListener(`load`, function () {
   // Particles>>>
   let particlesArray = [];
   // numero de partículas =>
-  const numberOfParticles = 1000;
+  const numberOfParticles = 5000;
   //>
   let mappedImage = [];
+  //> Mapeo / position "Y", vertical / X (Horizontal) >>
+  // Posición partículas en "Y" y "x".
+  for (let y = 0; y < canvas.height; y++) {
+    let row = [];
+    for (x = 0; x < canvas.width; x++) {
+      // datos de pixels / color>>
+      const red = pixels.data[y * 4 * pixels.width + x * 4];
+      const green = pixels.data[y * 4 * pixels.width + (x * 4 + 1)];
+      const blue = pixels.data[y * 4 * pixels.width + (x * 4 + 2)];
+      const brightness = calculateRelativeBrightness(red, green, blue);
+      const cell = [(cellBrightness = brightness)];
 
-  // Construir la base con Partículas >>
+      row.push(cell);
+    }
+
+    mappedImage.push(row);
+  }
+  console.log(mappedImage);
+
+  // function colors / calcular >>
+  function calculateRelativeBrightness(red, green, blue) {
+    return (
+      Math.sqrt(
+        red * red * 0.299 + green * green * 0.587 + blue * blue * 0.114
+      ) / 100
+    );
+  }
+
+  // Construir la base con Partículas >>>>>>
   class Particle {
     constructor() {
       this.x = Math.random() * canvas.width; //Ancho
@@ -44,11 +71,19 @@ myImage.addEventListener(`load`, function () {
       this.speed = 0; //aceleración
       this.velocity = Math.random() * 0.5; //velocidad
       this.size = Math.random() * 1.5 + 1; //tamaño
+      this.position1 = Math.floor(this.y); // position Y
+      this.position2 = Math.floor(this.x); // position x
     }
     //> Methods>>
     //descarga
     update() {
-      this.y += this.velocity;
+      this.position1 = Math.floor(this.y); // position Y
+      this.position2 = Math.floor(this.x); // position x
+      this.speed = mappedImage[this.position1][this.position2][0];
+      // move>
+      let movement = 2.5 - this.speed + this.velocity;
+      //>
+      this.y += movement;
 
       if (this.y >= canvas.height) {
         this.y = 0;
@@ -84,7 +119,7 @@ myImage.addEventListener(`load`, function () {
     // llamar la animation / invocar
     requestAnimationFrame(animate);
   }
-  animate();
+  //animate();
 });
 
 console.groupEnd();
