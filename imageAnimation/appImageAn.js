@@ -24,10 +24,17 @@ myImage.addEventListener(`load`, function () {
   canvas.height = 600;
 
   ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
+
+  //pexelsImg>
+  const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  //console.log(pixels);
+
   // Particles>>>
   let particlesArray = [];
   // numero de partículas =>
   const numberOfParticles = 1000;
+  //>
+  let mappedImage = [];
 
   // Construir la base con Partículas >>
   class Particle {
