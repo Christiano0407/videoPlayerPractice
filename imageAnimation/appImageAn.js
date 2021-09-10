@@ -14,8 +14,8 @@ myImage.src = `data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA
 /* canvas.height = 800; */
 /* //>>> Aparecer la imagen en web >> */
 /* ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height); */
-
-//>>>
+// >>>>
+//>>> Cargar image>
 myImage.addEventListener(`load`, function () {
   const canvas = document.getElementById(`canvas1`);
   const ctx = canvas.getContext(`2d`);
@@ -29,6 +29,7 @@ myImage.addEventListener(`load`, function () {
   // numero de partículas =>
   const numberOfParticles = 1000;
 
+  // Construir la base con Partículas >>
   class Particle {
     constructor() {
       this.x = Math.random() * canvas.width; //Ancho
@@ -64,6 +65,7 @@ myImage.addEventListener(`load`, function () {
   init();
 
   function animate() {
+    ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
     ctx.globalAlpha = 0.05;
     (ctx.fillStyle = `rgb(0, 0, 0)`),
       ctx.fillRect(0, 0, canvas.width, canvas.height);
