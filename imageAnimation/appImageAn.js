@@ -27,6 +27,8 @@ myImage.addEventListener(`load`, function () {
 
   //pexelsImg>
   const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  //rect >forma>
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   //console.log(pixels);
 
   // Particles>>>
@@ -107,13 +109,14 @@ myImage.addEventListener(`load`, function () {
   init();
 
   function animate() {
-    ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
+    //ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height); //se vea la imagen / transparente la imagen >
     ctx.globalAlpha = 0.05;
     (ctx.fillStyle = `rgb(0, 0, 0)`),
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     for (let i = 0; i < particlesArray.length; i++) {
       particlesArray[i].update();
+      ctx.globalAlpha = particlesArray[i].speed * 0.5; // Máscara para la imagen y partículas >
       particlesArray[i].draw();
     }
     // llamar la animation / invocar
