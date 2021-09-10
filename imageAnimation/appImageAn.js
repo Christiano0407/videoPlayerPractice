@@ -24,6 +24,58 @@ myImage.addEventListener(`load`, function () {
   canvas.height = 600;
 
   ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
+  // Particles>>>
+  let particlesArray = [];
+  // numero de partículas =>
+  const numberOfParticles = 1000;
+
+  class Particle {
+    constructor() {
+      this.x = Math.random() * canvas.width; //Ancho
+      this.y = 0; //alto
+      this.speed = 0; //aceleración
+      this.velocity = Math.random() * 0.5; //velocidad
+      this.size = Math.random() * 1.5 + 1; //tamaño
+    }
+    //> Methods>>
+    //descarga
+    update() {
+      this.y += this.velocity;
+
+      if (this.y >= canvas.height) {
+        this.y = 0;
+        this.x = Math.random() * canvas.width;
+      }
+    }
+    // pintar/canvas
+    draw() {
+      ctx.beginPath();
+      ctx.fillStyle = "#ffffff";
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+  //> Functions / events >
+  function init() {
+    for (let index = 0; index < numberOfParticles; index++) {
+      particlesArray.push(new Particle());
+    }
+  }
+  init();
+
+  function animate() {
+    ctx.globalAlpha = 0.05;
+    (ctx.fillStyle = `rgb(0, 0, 0)`),
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    for (let i = 0; i < particlesArray.length; i++) {
+      particlesArray[i].update();
+      particlesArray[i].draw();
+    }
+    // llamar la animation / invocar
+    requestAnimationFrame(animate);
+  }
+  animate();
 });
 
 console.groupEnd();
